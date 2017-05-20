@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#screen brightness adjuster
+
+max_brightness=77978
+echo 77978 | sudo tee /sys/class/backlight/gmux_backlight/brightness
+
+exit 0

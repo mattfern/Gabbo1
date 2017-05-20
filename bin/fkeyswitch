@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Script to change to alternate function shortcuts
+
+echo "changing function keys"
+
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+
+exit 0

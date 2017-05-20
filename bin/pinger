@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Pinger script
+
+echo -n "Enter web address to ping? > "
+read server
+echo "You entered: $server"
+
+echo -n "How many hours do you want to ping for? >"
+read hours
+echo "Will run for $hours hours"
+
+j=1
+while [ "$j" -le "$hours" ]; do
+    echo "Cycle $j"
+    j=$(($j + 1))
+    for i in {1..6}
+      do
+        echo "$i Pinging"
+        date +%T >> ~/Documents/PingReport/$(date +%a%y%m%d).txt
+        ping -c10 $server | grep rtt | cut -d/ -f5 >> ~/Documents/PingReport/$(date +%a%y%m%d).txt
+        echo "$i $(date +%T) Waiting to ping..."
+        sleep 589s
+    done
+done
+
+exit 0
