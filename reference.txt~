@@ -1,0 +1,8 @@
+To activate for all users (permissions)
+chmod 755 filename.sh
+
+To show path:
+echo $PATH
+
+To show list of predefined variables:
+env

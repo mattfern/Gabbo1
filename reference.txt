@@ -1,0 +1,14 @@
+To activate for all users (permissions)
+chmod 755 filename.sh
+
+To show path:
+echo $PATH
+
+To show list of predefined variables:
+env
+
+To search for a file use:
+find <LocationToSearch> -name "filename.extension"
+
+To search within a manual page:
+/<WordToSearchFor> (pressing n will jump to the next match)
