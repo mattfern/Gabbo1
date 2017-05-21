@@ -12,3 +12,9 @@ find <LocationToSearch> -name "filename.extension"
 
 To search within a manual page:
 /<WordToSearchFor> (pressing n will jump to the next match)
+
+Git:
+1.  git status
+2.  git add
+3.  git commit -m "message"
+4.  git push (it will then ask for a username and password)
