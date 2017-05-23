@@ -1,0 +1,26 @@
+head
+View the first n lines of data.
+
+tail
+View the last n lines of data.
+
+sort
+Organise the data into order.
+
+nl
+Print line numbers before data.
+
+wc
+Print a count of lines, words and characters.
+
+cut
+Cut the data into fields and only display the specified fields.
+
+sed
+Do a search and replace on the data.
+
+uniq
+Remove duplicate lines.
+
+tac
+Print the data in reverse order.

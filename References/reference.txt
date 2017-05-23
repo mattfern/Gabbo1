@@ -1,0 +1,24 @@
+To activate for all users (permissions)
+chmod 755 filename.sh
+
+To show path:
+echo $PATH
+
+To show list of predefined variables:
+env
+
+To search for a file use:
+find <LocationToSearch> -name "filename.extension"
+
+To search within a manual page:
+/<WordToSearchFor> (pressing n will jump to the next match)
+
+Git:
+1.  git status
+2.  git add
+3.  git commit -m "message"
+4.  git push (it will then ask for a username and password)
+
+apt-get:
+sudo apt-get upgrade
+sudo apt-get install <package>
