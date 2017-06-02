@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#keyboar brightness adjuster
+
+max_brightness=250
+echo $max_brightness | sudo tee /sys/class/leds/smc::kbd_backlight/brightness
+
+exit 0
